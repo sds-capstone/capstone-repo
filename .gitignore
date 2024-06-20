@@ -1,8 +1,8 @@
 # derivative files
 index_files/*
-_freeze/*
+/_freeze/*
 README.html
-README_files/*
+/README_files/*
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
