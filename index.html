@@ -183,11 +183,22 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#sec-data-methods" id="toc-sec-data-methods" class="nav-link" data-scroll-target="#sec-data-methods"><span class="header-section-number">2</span> Data</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3</span> Methods</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#relevant-work" id="toc-relevant-work" class="nav-link" data-scroll-target="#relevant-work"><span class="header-section-number">1.1</span> Relevant work</a></li>
+  <li><a href="#our-contribution" id="toc-our-contribution" class="nav-link" data-scroll-target="#our-contribution"><span class="header-section-number">1.2</span> Our contribution</a></li>
+  </ul></li>
+  <li><a href="#sec-data" id="toc-sec-data" class="nav-link" data-scroll-target="#sec-data"><span class="header-section-number">2</span> Data</a></li>
+  <li><a href="#sec-methods" id="toc-sec-methods" class="nav-link" data-scroll-target="#sec-methods"><span class="header-section-number">3</span> Methods</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">4</span> Results</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><span class="header-section-number">5.1</span> Limitations</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work"><span class="header-section-number">5.2</span> Future work</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts"><span class="header-section-number">5.3</span> Final thoughts</a></li>
+  </ul></li>
+  
+  
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
@@ -203,6 +214,9 @@ window.Quarto = {
 
 <section id="introduction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
+<blockquote class="blockquote">
+<p>Introduction and Motivation: What is the problem you are trying to solve? Why is this problem interesting? What has been tried before? What have been the shortcoming of those approaches that necessitate your efforts? Often, this section will conclude with a subsection (or paragraph) outlining “our contributions.” What is the new knowledge that this paper contributes?</p>
+</blockquote>
 <div id="cell-fig-timeline" class="cell">
 <div class="cell-output-display">
 <div id="fig-timeline" class="quarto-float quarto-figure quarto-figure-center anchored" alt="An event plot of the years of the last 8 eruptions on La Palma.">
@@ -218,9 +232,55 @@ Figure&nbsp;1: Timeline of recent earthquakes on La Palma
 </div>
 <a class="quarto-notebook-link" id="nblink-1" href="index-preview.html#cell-fig-timeline">Source: Article Notebook</a></div>
 <p>Based on data up to and including 1971, eruptions on La Palma happen every 79.8 years on average.</p>
+<div id="fig-map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/la-palma-map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Map of La Palma"><img src="images/la-palma-map.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Map of La Palma
+</figcaption>
+</figure>
+</div>
+<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<section id="relevant-work" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="relevant-work"><span class="header-section-number">1.1</span> Relevant work</h3>
 <p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span>, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
 <p>Eight eruptions have been recorded since the late 1400s (<a href="#fig-timeline" class="quarto-xref">Figure&nbsp;1</a>).</p>
-<p>Data and methods are discussed in <a href="#sec-data-methods" class="quarto-xref">Section&nbsp;2</a>.</p>
+</section>
+<section id="our-contribution" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="our-contribution"><span class="header-section-number">1.2</span> Our contribution</h3>
+<p>Data and methods are discussed <a href="#sec-data" class="quarto-xref">Section&nbsp;2</a> and <a href="#sec-methods" class="quarto-xref">Section&nbsp;3</a>, respectively.</p>
+</section>
+</section>
+<section id="sec-data" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sec-data"><span class="header-section-number">2</span> Data</h2>
+<blockquote class="blockquote">
+<p>Data: Where did it come from? What are some basic summary statistics, variable definitions, and/or visualizations that help the reader understand the data you are working with?</p>
+</blockquote>
+<p>Read a clean version of data:</p>
+<p>Create spatial plot:</p>
+<div id="cell-fig-spatial-plot" class="cell">
+<div class="cell-output-display">
+<div id="fig-spatial-plot" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A scatterplot of earthquake locations plotting latitude against longitude.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-spatial-plot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: Locations of earthquakes on La Palma since 2017"><img src="index_files/figure-html/fig-spatial-plot-1.png" class="img-fluid figure-img" alt="A scatterplot of earthquake locations plotting latitude against longitude." width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Locations of earthquakes on La Palma since 2017
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-spatial-plot" class="quarto-xref">Figure&nbsp;3</a> shows the location of recent Earthquakes on La Palma.</p>
+</section>
+<section id="sec-methods" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-methods"><span class="header-section-number">3</span> Methods</h2>
+<blockquote class="blockquote">
+<p>Methods: What did you actually do? What techniques or methods did you employ? What were the specifications for any statistical models you used? What software or packages did you use or develop?</p>
+</blockquote>
 <p>Let <span class="math inline">\(x\)</span> denote the number of eruptions in a year. Then, <span class="math inline">\(x\)</span> can be modeled by a Poisson distribution</p>
 <p><span id="eq-poisson"><span class="math display">\[
 p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
@@ -278,49 +338,35 @@ Table&nbsp;1: Recent historic eruptions on La Palma
 </figure>
 </div>
 <p><a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a> summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.</p>
-<div id="fig-map" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/la-palma-map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Map of La Palma"><img src="images/la-palma-map.png" class="img-fluid figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Map of La Palma
-</figcaption>
-</figure>
-</div>
-<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;2</a>).</p>
-<p>Read a clean version of data:</p>
-<p>Create spatial plot:</p>
-<div id="cell-fig-spatial-plot" class="cell">
-<div class="cell-output-display">
-<div id="fig-spatial-plot" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A scatterplot of earthquake locations plotting latitude against longitude.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-spatial-plot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: Locations of earthquakes on La Palma since 2017"><img src="index_files/figure-html/fig-spatial-plot-1.png" class="img-fluid figure-img" alt="A scatterplot of earthquake locations plotting latitude against longitude." width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Locations of earthquakes on La Palma since 2017
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p><a href="#fig-spatial-plot" class="quarto-xref">Figure&nbsp;3</a> shows the location of recent Earthquakes on La Palma.</p>
-</section>
-<section id="sec-data-methods" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="sec-data-methods"><span class="header-section-number">2</span> Data</h2>
-</section>
-<section id="methods" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="methods"><span class="header-section-number">3</span> Methods</h2>
 </section>
 <section id="results" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="results"><span class="header-section-number">4</span> Results</h2>
+<blockquote class="blockquote">
+<p>Results: What did you learn about the problem you identified in Section 1? This is where you put the tables, figures, and analytics by-products of your work.</p>
+</blockquote>
 </section>
 <section id="conclusion" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5</span> Conclusion</h2>
+<blockquote class="blockquote">
+<p>Conclusion: What are the limitations of your work? What are some next steps that someone (either you or another research group) should consider in attempting to further your work? Remind us one last time about what you did.</p>
+</blockquote>
+<section id="limitations" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="limitations"><span class="header-section-number">5.1</span> Limitations</h3>
 </section>
+<section id="future-work" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="future-work"><span class="header-section-number">5.2</span> Future work</h3>
+</section>
+<section id="final-thoughts" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="final-thoughts"><span class="header-section-number">5.3</span> Final thoughts</h3>
+</section>
+</section>
+
+
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<blockquote class="blockquote">
+<p>References: Every reference (except for books) needs a DOI (strongly preferred) or URL. Use <a href="https://scholar.google.com">Google Scholar</a> to help with BibTeX. Every book needs publisher location (e.g.&nbsp;“City, ST: Publisher”). 🙄 See <a href="https://smithcollege-sds.github.io/sds100/lab_12_bibliographies.html">SDS 100: Bibliographies</a></p>
+</blockquote>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-marrero2019" class="csl-entry" role="listitem">
 Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019. <span>“Strategies for the Development of Volcanic Hazard Maps in Monogenetic Volcanic Fields: The Example of <span>La</span> <span>Palma</span> (<span>Canary</span> <span>Islands</span>).”</span> <em>Journal of Applied Volcanology</em> 8 (July). <a href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</a>.
@@ -328,7 +374,18 @@ Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rod
 </div>
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section id="ethical-statement" class="level2 appendix" data-number="6"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">6</span> Ethical statement</h2><div class="quarto-appendix-contents">
+
+<blockquote class="blockquote">
+<p>Drawing on what you have learned about data science ethics in this class, discuss any ethical considerations in your project. For some projects, this statement could be quite short (one paragraph may suffice). For other projects, more detail may be needed (no more than 2 pages).</p>
+<p>Be expansive and creative in your thinking about <strong>possible</strong> ethical considerations. One way to do this assignment poorly would be to write a short statement asserting that there are no ethical considerations, only to have me think of several fairly obvious ones.</p>
+</blockquote>
+</div></section><section id="acknowledgements" class="level2 appendix" data-number="7"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">7</span> Acknowledgements</h2><div class="quarto-appendix-contents">
+
+<blockquote class="blockquote">
+<p>Were there any people or organizations who helped you that you would like to acknowledge?</p>
+</blockquote>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -751,7 +808,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

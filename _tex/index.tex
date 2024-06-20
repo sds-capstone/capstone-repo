@@ -201,6 +201,15 @@ Nacional (IGN). \ldots{}
 
 \section{Introduction}\label{introduction}
 
+\begin{quote}
+Introduction and Motivation: What is the problem you are trying to
+solve? Why is this problem interesting? What has been tried before? What
+have been the shortcoming of those approaches that necessitate your
+efforts? Often, this section will conclude with a subsection (or
+paragraph) outlining ``our contributions.'' What is the new knowledge
+that this paper contributes?
+\end{quote}
+
 \textsubscript{Source:
 \href{https://sds-capstone.github.io/quarto-manuscript/index.qmd.html}{Article
 Notebook}}
@@ -229,6 +238,23 @@ Notebook}}
 Based on data up to and including 1971, eruptions on La Palma happen
 every 79.8 years on average.
 
+\begin{figure}
+
+\centering{
+
+\includegraphics{images/la-palma-map.png}
+
+}
+
+\caption{\label{fig-map}Map of La Palma}
+
+\end{figure}%
+
+La Palma is one of the west most islands in the Volcanic Archipelago of
+the Canary Islands (Figure~\ref{fig-map}).
+
+\subsection{Relevant work}\label{relevant-work}
+
 Studies of the magma systems feeding the volcano, such as Marrero et al.
 (2019), have proposed that there are two main magma reservoirs feeding
 the Cumbre Vieja volcano; one in the mantle (30-40km depth) which
@@ -237,7 +263,55 @@ charges and in turn feeds a shallower crustal reservoir (10-20km depth).
 Eight eruptions have been recorded since the late 1400s
 (Figure~\ref{fig-timeline}).
 
-Data and methods are discussed in Section~\ref{sec-data-methods}.
+\subsection{Our contribution}\label{our-contribution}
+
+Data and methods are discussed Section~\ref{sec-data} and
+Section~\ref{sec-methods}, respectively.
+
+\section{Data}\label{sec-data}
+
+\begin{quote}
+Data: Where did it come from? What are some basic summary statistics,
+variable definitions, and/or visualizations that help the reader
+understand the data you are working with?
+\end{quote}
+
+Read a clean version of data:
+
+\textsubscript{Source:
+\href{https://sds-capstone.github.io/quarto-manuscript/index.qmd.html}{Article
+Notebook}}
+
+Create spatial plot:
+
+\phantomsection\label{cell-fig-spatial-plot}
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{index_files/figure-pdf/fig-spatial-plot-1.pdf}
+
+}
+
+\caption{\label{fig-spatial-plot}Locations of earthquakes on La Palma
+since 2017}
+
+\end{figure}%
+
+\textsubscript{Source:
+\href{https://sds-capstone.github.io/quarto-manuscript/index.qmd.html}{Article
+Notebook}}
+
+Figure~\ref{fig-spatial-plot} shows the location of recent Earthquakes
+on La Palma.
+
+\section{Methods}\label{sec-methods}
+
+\begin{quote}
+Methods: What did you actually do? What techniques or methods did you
+employ? What were the specifications for any statistical models you
+used? What software or packages did you use or develop?
+\end{quote}
 
 Let \(x\) denote the number of eruptions in a year. Then, \(x\) can be
 modeled by a Poisson distribution
@@ -276,64 +350,62 @@ Montaña Quemada & 1492 \\
 Table~\ref{tbl-history} summarises the eruptions recorded since the
 colonization of the islands by Europeans in the late 1400s.
 
-\begin{figure}
-
-\centering{
-
-\includegraphics{images/la-palma-map.png}
-
-}
-
-\caption{\label{fig-map}Map of La Palma}
-
-\end{figure}%
-
-La Palma is one of the west most islands in the Volcanic Archipelago of
-the Canary Islands (Figure~\ref{fig-map}).
-
-\textsubscript{Source:
-\href{https://sds-capstone.github.io/quarto-manuscript/index.qmd.html}{Article
-Notebook}}
-
-Read a clean version of data:
-
-\textsubscript{Source:
-\href{https://sds-capstone.github.io/quarto-manuscript/index.qmd.html}{Article
-Notebook}}
-
-Create spatial plot:
-
-\phantomsection\label{cell-fig-spatial-plot}
-\begin{figure}[H]
-
-\centering{
-
-\includegraphics{index_files/figure-pdf/fig-spatial-plot-1.pdf}
-
-}
-
-\caption{\label{fig-spatial-plot}Locations of earthquakes on La Palma
-since 2017}
-
-\end{figure}%
-
-\textsubscript{Source:
-\href{https://sds-capstone.github.io/quarto-manuscript/index.qmd.html}{Article
-Notebook}}
-
-Figure~\ref{fig-spatial-plot} shows the location of recent Earthquakes
-on La Palma.
-
-\section{Data}\label{sec-data-methods}
-
-\section{Methods}\label{methods}
-
 \section{Results}\label{results}
+
+\begin{quote}
+Results: What did you learn about the problem you identified in Section
+1? This is where you put the tables, figures, and analytics by-products
+of your work.
+\end{quote}
 
 \section{Conclusion}\label{conclusion}
 
+\begin{quote}
+Conclusion: What are the limitations of your work? What are some next
+steps that someone (either you or another research group) should
+consider in attempting to further your work? Remind us one last time
+about what you did.
+\end{quote}
+
+\subsection{Limitations}\label{limitations}
+
+\subsection{Future work}\label{future-work}
+
+\subsection{Final thoughts}\label{final-thoughts}
+
+\section{Ethical statement}\label{ethical-statement}
+
+\begin{quote}
+Drawing on what you have learned about data science ethics in this
+class, discuss any ethical considerations in your project. For some
+projects, this statement could be quite short (one paragraph may
+suffice). For other projects, more detail may be needed (no more than 2
+pages).
+
+Be expansive and creative in your thinking about \textbf{possible}
+ethical considerations. One way to do this assignment poorly would be to
+write a short statement asserting that there are no ethical
+considerations, only to have me think of several fairly obvious ones.
+\end{quote}
+
+\section{Acknowledgements}\label{acknowledgements}
+
+\begin{quote}
+Were there any people or organizations who helped you that you would
+like to acknowledge?
+\end{quote}
+
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
+
+\begin{quote}
+References: Every reference (except for books) needs a DOI (strongly
+preferred) or URL. Use \href{https://scholar.google.com}{Google Scholar}
+to help with BibTeX. Every book needs publisher location (e.g.~``City,
+ST: Publisher''). 🙄 See
+\href{https://smithcollege-sds.github.io/sds100/lab_12_bibliographies.html}{SDS
+100: Bibliographies}
+\end{quote}
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
