@@ -96,7 +96,33 @@ where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probab
 
 La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map). 
 
-{{< embed notebooks/explore-earthquakes.qmd#fig-spatial-plot >}}
+
+```{r}
+library(tidyverse)
+```
+
+
+Read a clean version of data:
+
+```{r}
+la_palma <- read_csv(here::here("data/la-palma.csv"))
+```
+
+Create spatial plot:
+
+```{r}
+#| label: fig-spatial-plot
+#| fig-cap: "Locations of earthquakes on La Palma since 2017"
+#| fig-alt: "A scatterplot of earthquake locations plotting latitude
+#|   against longitude."
+la_palma |> 
+  ggplot(aes(Longitude, Latitude)) +
+  geom_point(aes(color = Magnitude, size = 40-`Depth(km)`)) +
+  scale_color_viridis_c(direction = -1) + 
+  scale_size(range = c(0.5, 2), guide = "none") +
+  theme_bw()
+```
+
 
 @fig-spatial-plot shows the location of recent Earthquakes on La Palma.
 
