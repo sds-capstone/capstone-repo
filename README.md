@@ -1,7 +1,7 @@
 ## Smith SDS capstone project
 
 <!-- badges: start -->
-[![paper](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yaml/badge.svg)](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yaml)
+[![paper](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml/badge.svg)](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml)
 <!-- badges: end -->
 
 You can view the published work at:
