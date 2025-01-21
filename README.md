@@ -1,9 +1,5 @@
 ## Smith SDS Capstone Project
 
-<!-- badges: start -->
-[![paper](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml/badge.svg)](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml)
-<!-- badges: end -->
-
 ## Team members
 
 - Sophia Smith...
