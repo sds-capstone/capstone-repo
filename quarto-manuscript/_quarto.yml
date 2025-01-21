@@ -13,4 +13,4 @@ format:
       hypothesis: true
   pdf: 
     keep-tex: true
-    fig-height: 4.3
+    fig-height: 3

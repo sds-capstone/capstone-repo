@@ -1,15 +1,26 @@
-## Smith SDS capstone project
+## Smith SDS Capstone Project
 
 <!-- badges: start -->
 [![paper](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml/badge.svg)](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml)
 <!-- badges: end -->
 
-You can view the published work at:
-<https://sds-capstone.github.io/quarto-manuscript/>
-
 ## Team members
 
-## Note
+- Sophia Smith...
+ 
+## Team rules
 
-This is a template repo for generating a manuscript from Quarto that accompanies the tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html)
+## Final paper
+
+Your final paper is a Quarto Manuscript in the `quarto-manuscript/` directory. 
+Please see the documentation for [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html).
+
+You can build the paper locally from the root directory of the project by the following command in a **Terminal**:
+
+```bash
+quarto render quarto-manuscript
+```
+
+The [GitHub Action](https://quarto.org/docs/publishing/github-pages.html#github-action) in `.github/workflows/publish.yml` will trigger a build of the Quarto Manuscript on each commit. 
+The badge above is linked to the status of that action. 
 
