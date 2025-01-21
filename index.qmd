@@ -83,7 +83,7 @@ Read a clean version of data:
 
 ```{r}
 library(tidyverse)
-la_palma <- read_csv(here::here("data/la-palma.csv"))
+la_palma <- read_csv(here::here("quarto-manuscript/data/la-palma.csv"))
 ```
 
 Create spatial plot:
