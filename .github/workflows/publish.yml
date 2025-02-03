@@ -25,6 +25,8 @@ jobs:
             any::remotes
             any::tidyverse
             any::here
+            any::markdown
+            any::knitr
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

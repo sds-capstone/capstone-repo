@@ -1,0 +1,38 @@
+---
+output:
+  github_document
+---
+
+## Quarto Manuscript
+
+<!-- badges: start -->
+[![paper](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml/badge.svg)](https://github.com/sds-capstone/quarto-manuscript/actions/workflows/publish.yml)
+<!-- badges: end -->
+
+You can view the published work at:
+<https://sds-capstone.github.io/quarto-manuscript/>
+
+## Note
+
+This is a template repo for generating a manuscript from Quarto that accompanies the tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html)
+
+## Repository analysis via `chchchanges`
+
+Here is a summary of the commits made to this repository:
+
+```{r tbl}
+chchchanges::summarize_commits() |>
+  knitr::kable()
+```
+
+
+The following analysis is automated via [Google Gemini](https://en.wikipedia.org/wiki/Gemini_(chatbot)) and the [`chchchanges`](https://github.com/beanumber/chchchanges) package. 
+
+```{r llm, results='asis'}
+chchchanges::summarize_git_with_llm(
+  show_prompts = TRUE, 
+  user_prompt = "Also assign letter grades to each contributor. "
+) |>
+  markdown::mark()
+```
+
