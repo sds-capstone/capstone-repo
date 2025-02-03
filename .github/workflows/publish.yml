@@ -30,7 +30,7 @@ jobs:
 
       - name: Install GitHub packages
         run: |
-          Rscript -e 'remotes::install_github("beanumber/chchchanges")
+          Rscript -e 'remotes::install_github("beanumber/chchchanges")'
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
