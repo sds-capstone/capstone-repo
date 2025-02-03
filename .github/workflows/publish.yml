@@ -32,6 +32,7 @@ jobs:
             any::here
             any::markdown
             any::knitr
+            any::git2r
 
       - name: Install GitHub packages
         run: |
