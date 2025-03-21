@@ -31,6 +31,8 @@ jobs:
           packages:
             any::remotes
             any::rmarkdown
+            any::dplyr
+            any::git2r
 
       - name: Install chchchanges
         run: |
