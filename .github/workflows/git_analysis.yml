@@ -43,10 +43,7 @@ jobs:
         run: |
           Rscript -e 'rmarkdown::render("quarto-manuscript/README.Rmd", output_format = "md_document")'
   
-      - name: commit rendered README
-        run: |
-          git add README.md
-          git commit -m "Re-build README.md" || echo "No changes to commit"
-          git push origin master || echo "No changes to commit"
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v5.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
