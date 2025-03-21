@@ -43,7 +43,7 @@ jobs:
       # Render READEME.md using rmarkdown
       - name: render README
         run: |
-          Rscript -e 'rmarkdown::render("quarto-manuscript/README.Rmd", output_format = "md_document")'
+          Rscript -e 'rmarkdown::render(".chchchanges/README.Rmd", output_format = "md_document")'
   
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v5.1.0
