@@ -184,7 +184,7 @@
   <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
   <li><a href="#repository-analysis-via-chchchanges" id="toc-repository-analysis-via-chchchanges" class="nav-link" data-scroll-target="#repository-analysis-via-chchchanges">Repository analysis via <code>chchchanges</code></a>
   <ul class="collapse">
-  <li><a href="#current-as-of-march-21-2025-152008" id="toc-current-as-of-march-21-2025-152008" class="nav-link" data-scroll-target="#current-as-of-march-21-2025-152008">Current as of: March 21, 2025, 15:20:08</a></li>
+  <li><a href="#current-as-of-march-21-2025-152955" id="toc-current-as-of-march-21-2025-152955" class="nav-link" data-scroll-target="#current-as-of-march-21-2025-152955">Current as of: March 21, 2025, 15:29:55</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -203,12 +203,58 @@
 </section>
 <section id="repository-analysis-via-chchchanges" class="level2">
 <h2 class="anchored" data-anchor-id="repository-analysis-via-chchchanges">Repository analysis via <code>chchchanges</code></h2>
-<section id="current-as-of-march-21-2025-152008" class="level3">
-<h3 class="anchored" data-anchor-id="current-as-of-march-21-2025-152008">Current as of: March 21, 2025, 15:20:08</h3>
+<section id="current-as-of-march-21-2025-152955" class="level3">
+<h3 class="anchored" data-anchor-id="current-as-of-march-21-2025-152955">Current as of: March 21, 2025, 15:29:55</h3>
 <p>Here is a summary of the commits made to this repository:</p>
 <div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>chchchanges<span class="sc">::</span><span class="fu">summarize_commits</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>git2r<span class="sc">::</span><span class="fu">commits</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[739143b] 2025-03-21: Merge branch 'main' of https://github.com/sds-capstone/capstone-repo</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>chchchanges<span class="sc">::</span><span class="fu">tbl_commits</span>() <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-only" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-only-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-only-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">what</th>
+<th style="text-align: left;">who</th>
+<th style="text-align: left;">when</th>
+<th style="text-align: left;">why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">739143b23de38b1bb32fbacf515682a00c5c9053</td>
+<td style="text-align: left;">ben.baumer@gmail.com</td>
+<td style="text-align: left;">2025-03-21 15:27:24 GMT</td>
+<td style="text-align: left;">Merge branch ‘main’ of https://github.com/sds-capstone/capstone-repo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div></div></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>chchchanges<span class="sc">::</span><span class="fu">summarize_commits</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -233,8 +279,8 @@
 <tr class="odd">
 <td style="text-align: left;">ben.baumer@gmail.com</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: left;">2025-03-21 15:16:59 GMT</td>
-<td style="text-align: left;">2025-03-21 15:16:59 GMT</td>
+<td style="text-align: left;">2025-03-21 15:27:24 GMT</td>
+<td style="text-align: left;">2025-03-21 15:27:24 GMT</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">Inf</td>
 </tr>
@@ -243,11 +289,11 @@
 </div>
 </div></div>
 <p>The following analysis is automated via <a href="https://en.wikipedia.org/wiki/Gemini_(chatbot)">Google Gemini</a> and the <a href="https://github.com/beanumber/chchchanges"><code>chchchanges</code></a> package.</p>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>chchchanges<span class="sc">::</span><span class="fu">summarize_git_with_llm</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">show_prompts =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user_prompt =</span> <span class="st">"Also assign letter grades to each contributor. "</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  markdown<span class="sc">::</span><span class="fu">mark</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>chchchanges<span class="sc">::</span><span class="fu">summarize_git_with_llm</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">show_prompts =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user_prompt =</span> <span class="st">"Also assign letter grades to each contributor. "</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  markdown<span class="sc">::</span><span class="fu">mark</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Using model = "gemini-2.0-flash".
 System prompt: You are a friendly, supportive, college professor 
     evaluating student contributions to a git repository.
@@ -255,26 +301,18 @@ System prompt: You are a friendly, supportive, college professor
 Prompt: Analyze the following data from a git repository 
     and tell me who deserves what credit for 
     contributing to the project. 
-     Also assign letter grades to each contributor.  [{"who":"ben.baumer@gmail.com","num_commits":1,"first_commit":"2025-03-21 15:16:59 GMT","last_commit":"2025-03-21 15:16:59 GMT","days":0}]</code></pre>
+     Also assign letter grades to each contributor.  [{"who":"ben.baumer@gmail.com","num_commits":1,"first_commit":"2025-03-21 15:27:24 GMT","last_commit":"2025-03-21 15:27:24 GMT","days":0}]</code></pre>
 [1] “
 <p>
-Okay, I’d be happy to evaluate the contributions based on the provided data!
+Okay, I’d be happy to take a look at the contributions to the git repository!
 </p>
 
 <p>
-It looks like we have only one contributor in this dataset:
+Based on the data you provided, here’s my assessment:
 </p>
 
-<ul>
-
-<li>
-<strong><a href="\&quot;mailto:ben.baumer@gmail.com\&quot;">ben.baumer@gmail.com</a></strong>
-</li>
-
-</ul>
-
 <p>
-<strong>Analysis:</strong>
+<strong>Contributor:</strong> <a href="\&quot;mailto:ben.baumer@gmail.com\&quot;">ben.baumer@gmail.com</a>
 </p>
 
 <ul>
@@ -284,77 +322,89 @@ It looks like we have only one contributor in this dataset:
 </li>
 
 <li>
-<strong>Time Span:</strong> The single commit was made on 2025-03-21. This indicates a very short, possibly initial, contribution.
+<strong>First Commit:</strong> 2025-03-21 15:27:24 GMT
+</li>
+
+<li>
+<strong>Last Commit:</strong> 2025-03-21 15:27:24 GMT
+</li>
+
+<li>
+<strong>Days Active:</strong> 0
 </li>
 
 </ul>
 
 <p>
-<strong>Credit Allocation:</strong>
+<strong>Analysis and Grade:</strong>
 </p>
 
 <p>
-Since <a href="\&quot;mailto:ben.baumer@gmail.com\&quot;">ben.baumer@gmail.com</a> is the <em>only</em> contributor in this dataset, they deserve 100% of the credit for any work represented by that single commit. It’s impossible to assess the scope or importance of that commit based solely on this data, but they are the only one who contributed code to the repository, so they get the credit.
+Ben has made a single commit on a single day. While it’s great that Ben made a contribution, a single commit doesn’t provide a lot of information about the depth or breadth of his work. It’s possible it was a small fix, an initial file upload, or some other minor contribution.
 </p>
 
 <p>
-<strong>Grade:</strong>
+<strong>Grade:</strong> C
 </p>
 
 <p>
-Given the limited information and the single commit, it’s difficult to provide a nuanced grade. However, we can provide a grade, which may or may not change as the project proceeds. The grade for the first contribution is:
+<strong>Explanation of Grade:</strong>
 </p>
 
 <ul>
 
 <li>
-<strong><a href="\&quot;mailto:ben.baumer@gmail.com\&quot;">ben.baumer@gmail.com</a>: C</strong>
+A single commit demonstrates some participation, but it’s difficult to assess the impact of the work without more context. It’s enough to show that effort was made, but more activity would be needed for a higher grade.
 </li>
 
 </ul>
 
 <p>
-<strong>Explanation of the Grade:</strong>
+<strong>Important Considerations:</strong>
 </p>
 
 <ul>
 
 <li>
-<strong>C:</strong> This grade acknowledges the initial contribution. It’s a fair starting point, indicating that the student has begun engaging with the project. A grade of C indicates that the student has met the minimum expectations for participation thus far, but has plenty of opportunity to improve.
-</li>
-
-</ul>
 
 <p>
-<strong>Recommendations:</strong>
+<strong>Context is Key:</strong> This analysis is based solely on the commit data. To provide a fairer assessment, I’d need to know:
 </p>
 
 <ul>
 
 <li>
-<strong>Further Contributions:</strong> Encourage <a href="\&quot;mailto:ben.baumer@gmail.com\&quot;">ben.baumer@gmail.com</a> to continue making commits, addressing more complex issues, and actively participating in the project.
+The nature of the project.
 </li>
 
 <li>
-<strong>Code Quality:</strong> As more code is added, ensure it adheres to coding standards, is well-documented, and addresses the project’s requirements effectively.
+The size and complexity of the commit.
 </li>
 
 <li>
-<strong>Collaboration:</strong> If this is a group project, encourage the student to collaborate with others, review their code, and provide constructive feedback.
+The overall goals and expectations for each team member.
 </li>
 
 <li>
-<strong>Project Scope:</strong> Consider the overall goals of the project. Ensure the student’s contributions are aligned with those goals and address the project’s core requirements.
+If there were other ways Ben contributed (e.g., design, planning, testing, documentation, discussions).
+</li>
+
+</ul>
+
 </li>
 
 <li>
-<strong>Commit Messages:</strong> Make sure that the contributor uses detailed commit messages that describe what they have done.
+
+<p>
+<strong>Collaboration:</strong> It’s important to remember that software development is often a collaborative effort. Commit numbers alone don’t always tell the whole story. Someone might have contributed significantly in other ways.
+</p>
+
 </li>
 
 </ul>
 
 <p>
-Please provide more data as the project progresses so I can give a more comprehensive assessment! I’m here to help your students succeed.
+Please let me know if you have additional information about the project or Ben’s contributions. With more context, I can provide a more comprehensive and accurate evaluation.
 </p>
 <p>”</p>
 </section>
