@@ -16,9 +16,46 @@ RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html)
 
 ## Repository analysis via `chchchanges`
 
-### Current as of: March 21, 2025, 15:18:56
+### Current as of: March 21, 2025, 15:29:18
 
 Here is a summary of the commits made to this repository:
+
+    git2r::commits()
+
+    ## [[1]]
+    ## [739143b] 2025-03-21: Merge branch 'main' of https://github.com/sds-capstone/capstone-repo
+
+    chchchanges::tbl_commits() |>
+      knitr::kable()
+
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">what</th>
+<th style="text-align: left;">who</th>
+<th style="text-align: left;">when</th>
+<th style="text-align: left;">why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td
+style="text-align: left;">739143b23de38b1bb32fbacf515682a00c5c9053</td>
+<td style="text-align: left;"><a href="mailto:ben.baumer@gmail.com"
+class="email">ben.baumer@gmail.com</a></td>
+<td style="text-align: left;">2025-03-21 15:27:24 GMT</td>
+<td style="text-align: left;">Merge branch ‘main’ of <a
+href="https://github.com/sds-capstone/capstone-repo"
+class="uri">https://github.com/sds-capstone/capstone-repo</a></td>
+</tr>
+</tbody>
+</table>
 
     chchchanges::summarize_commits() |>
       knitr::kable()
@@ -47,8 +84,8 @@ Here is a summary of the commits made to this repository:
 <td style="text-align: left;"><a href="mailto:ben.baumer@gmail.com"
 class="email">ben.baumer@gmail.com</a></td>
 <td style="text-align: right;">1</td>
-<td style="text-align: left;">2025-03-21 15:16:59 GMT</td>
-<td style="text-align: left;">2025-03-21 15:16:59 GMT</td>
+<td style="text-align: left;">2025-03-21 15:27:24 GMT</td>
+<td style="text-align: left;">2025-03-21 15:27:24 GMT</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">Inf</td>
 </tr>
@@ -72,62 +109,76 @@ Gemini](https://en.wikipedia.org/wiki/Gemini_(chatbot)) and the
     ## Prompt: Analyze the following data from a git repository 
     ##     and tell me who deserves what credit for 
     ##     contributing to the project. 
-    ##      Also assign letter grades to each contributor.  [{"who":"ben.baumer@gmail.com","num_commits":1,"first_commit":"2025-03-21 15:16:59 GMT","last_commit":"2025-03-21 15:16:59 GMT","days":0}]
+    ##      Also assign letter grades to each contributor.  [{"who":"ben.baumer@gmail.com","num_commits":1,"first_commit":"2025-03-21 15:27:24 GMT","last_commit":"2025-03-21 15:27:24 GMT","days":0}]
 
 \[1\] “
 <p>
-Okay, I’d be happy to analyze the contribution data you’ve provided!
+Okay, let’s break down the contribution data you’ve provided.
 </p>
 <p>
-Based on the data, we have one contributor:
+<strong>Analysis:</strong>
+</p>
+<p>
+We have one contributor:
 </p>
 <ul>
 <li>
-<strong><a href=\"mailto:ben.baumer@gmail.com\">ben.baumer@gmail.com</a></strong>
+<strong><a href=\"mailto:ben.baumer@gmail.com\">ben.baumer@gmail.com</a>:</strong>
+This individual has made 1 commit to the repository. This commit was the
+first and last, occurring on 2025-03-21, indicating a single day of
+contribution.
 </li>
 </ul>
 <p>
-Here’s a breakdown of the contribution and my assessment:
+<strong>Credit Allocation and Grades:</strong>
+</p>
+<p>
+Based on this data, here’s my assessment:
 </p>
 <ul>
 <li>
-<strong>Contribution:</strong> Ben made 1 commit on March 21, 2025. All
-the commits occurred on the same day.
-</li>
-<li>
-<strong>Analysis:</strong> Ben has made an initial contribution, which
-is a good start. However, one commit is a relatively small contribution
-to the project.
-</li>
-</ul>
 <p>
-<strong>Grade and Justification:</strong>
+<strong><a href=\"mailto:ben.baumer@gmail.com\">ben.baumer@gmail.com</a>:</strong>
+Given the single commit, it’s difficult to assess the depth of the
+contribution. However, they did initiate activity in the repository.
 </p>
 <ul>
 <li>
-<strong>Grade: C+</strong>
+<strong>Grade:</strong> C. A passing grade, acknowledging the initial
+contribution. To achieve a higher grade, we’d need to see more commits
+demonstrating engagement with the project over a longer period.
+</li>
+</ul>
 </li>
 </ul>
 <p>
-<strong>Explanation:</strong>has submitted a commit, which demonstrates
-their participation in the project. However, the limited number of
-commits suggests a need for more active engagement.
-</p>
-<p>
-<strong>Recommendations for Ben:</strong>
+<strong>General Feedback:</strong>
 </p>
 <ul>
 <li>
-I would encourage Ben to increase their contributions by exploring other
-parts of the project.
+<p>
+A single commit is a start, but a successful project typically involves
+more sustained effort. To improve their grade, they should aim to:
+</p>
+<ul>
+<li>
+Contribute regularly: Make commits frequently, addressing different
+aspects of the project.
 </li>
 <li>
-Consider reviewing existing code, fixing bugs, or adding new features.
+Demonstrate a deeper understanding: Tackle more complex issues.
 </li>
 <li>
-Active participation and further contributions are key to improving the
-grade!
+Engage with others: Participate in discussions, review code, and offer
+assistance to other contributors.
 </li>
 </ul>
+</li>
+</ul>
+<p>
+I’m here to help! Please let me know if you have more data to analyze,
+or if you’d like suggestions on how your contributors can improve their
+contributions. Keep up the good work!
+</p>
 
 ”
