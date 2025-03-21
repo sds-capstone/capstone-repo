@@ -22,6 +22,15 @@ This is a template repo for generating a manuscript from Quarto that accompanies
 
 Here is a summary of the commits made to this repository:
 
+```{r}
+git2r::commits()
+```
+
+```{r tbl-only}
+chchchanges::tbl_commits() |>
+  knitr::kable()
+```
+
 ```{r tbl}
 chchchanges::summarize_commits() |>
   knitr::kable()
